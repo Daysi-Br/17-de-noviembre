@@ -1,24 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Monedas</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Conversor de Monedas</h1>
-        <p>Esta herramienta usa la ExchangeRate API para convertir valores desde USD a Guaraníes, Pesos Argentinos y Reales.</p>
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        <label for="amount">Monto en USD:</label>
-        <input type="number" id="amount" placeholder="Ingresa un monto en USD">
+.container {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        <button id="convertBtn">Convertir</button>
+h1 {
+    text-align: center;
+    color: #333;
+}
 
-        <div id="results"></div>
-    </div>
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eef6ff;
+    border-left: 4px solid #0077cc;
+    border-radius: 5px;
+}
