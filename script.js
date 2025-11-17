@@ -6,7 +6,7 @@ document.getElementById("convertBtn").addEventListener("click", async () => {
         return;
     }
 
-    const API_KEY = "TU_API_KEY";  // <<--- coloca aquí tu API KEY real
+    const API_KEY = "532a0ab86780bc913a5321fc";
     const url = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`;
 
     try {
